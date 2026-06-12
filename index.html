@@ -71,7 +71,8 @@ header{padding:18px 16px 12px;position:sticky;top:0;z-index:20;
 .an-body{display:none;margin-top:10px}
 .an-body.open{display:block}
 .bal-lbl{display:flex;justify-content:space-between;font-size:12px;font-weight:700;margin-bottom:5px}
-.bal-lbl .lh{color:var(--acc)}.bal-lbl .la{color:var(--blue)}
+.bal-lbl .lh{color:var(--acc)}.bal-lbl .la{color:var(--blue)}.bal-lbl .lm{color:#aab4d4}
+.bal .d{background:#5a6480}
 .bal{display:flex;height:10px;border-radius:5px;overflow:hidden;background:var(--card2)}
 .bal .h{background:linear-gradient(90deg,#FF9900,#ffb84d)}
 .bal .a{background:linear-gradient(90deg,#1b6fc9,#3da5ff)}
@@ -81,8 +82,71 @@ header{padding:18px 16px 12px;position:sticky;top:0;z-index:20;
   border-radius:4px;font-size:10px;font-weight:700;color:#fff;margin-right:3px}
 .fW{background:var(--grn)}.fD{background:#6b7699}.fL{background:var(--red)}
 .an-note{font-size:10px;color:var(--mut);margin-top:9px;line-height:1.5}
+.pred-card{background:linear-gradient(135deg,#15203f,#171d33);border:1px solid var(--line);border-radius:14px;margin:0 0 16px;overflow:hidden}
+.pred-toggle{padding:13px 15px;font-size:14px;font-weight:800;cursor:pointer;user-select:none;display:flex;align-items:center;gap:6px;color:var(--txt)}
+.pred-leader{margin-left:auto;font-size:12px;color:var(--mut);font-weight:600;display:flex;align-items:center;gap:4px;white-space:nowrap}
+.pred-caret{color:var(--acc);flex:0 0 auto}
+.pred-body{display:none;padding:0 15px 15px}
+.pred-body.open{display:block}
+.pred-sub{font-size:11px;color:var(--mut);margin:0 0 12px;line-height:1.5}
+.pred-rank{display:flex;flex-direction:column;gap:7px}
+.pr-row{display:flex;align-items:center;gap:8px;font-size:13px}
+.pr-rk{width:18px;text-align:center;font-weight:800;color:var(--mut);flex:0 0 auto}
+.pr-rk.r1{color:#FFD700}.pr-rk.r2{color:#C0C8D8}.pr-rk.r3{color:#cd7f32}
+.pr-flag{width:26px;height:19px;border-radius:3px;object-fit:cover;flex:0 0 auto;background:var(--card2);box-shadow:0 1px 2px rgba(0,0,0,.4)}
+.pr-flag.tiny{width:20px;height:15px}
+.pr-name{font-weight:700;flex:0 0 auto;min-width:56px}
+.pr-bar{flex:1;height:8px;background:var(--card2);border-radius:4px;overflow:hidden;min-width:24px}
+.pr-bar>span{display:block;height:100%;background:linear-gradient(90deg,#FF9900,#ffb84d);border-radius:4px}
+.pr-pct{flex:0 0 auto;font-weight:800;color:var(--acc);width:34px;text-align:right}
+.pr-elo{flex:0 0 auto;font-size:11px;color:var(--mut);width:74px;text-align:right}
+.pr-up{color:var(--grn);font-weight:700}.pr-dn{color:var(--red);font-weight:700}.pr-flat{color:var(--mut)}
+.pred-hist-hdr{font-size:13px;font-weight:700;color:var(--acc);margin:16px 0 8px}
+.phh-sub{font-size:10px;color:var(--mut);font-weight:500}
+.pred-hist{display:flex;flex-direction:column}
+.ph-item{font-size:12px;color:#cdd6f4;line-height:1.6;padding:7px 0;border-bottom:1px solid rgba(40,49,84,.5);display:flex;gap:8px}
+.ph-item:last-child{border-bottom:none}
+.ph-item.up{background:rgba(255,153,0,.07);border-radius:6px;padding:7px 8px}
+.ph-date{flex:0 0 auto;color:var(--mut);font-weight:700;width:34px}
+.ph-txt{flex:1}
+.ph-flag{width:16px;height:12px;border-radius:2px;object-fit:cover;vertical-align:-1px;margin:0 3px 0 1px;background:var(--card2)}
+.ph-base{color:var(--mut)}
+.grp-card{background:linear-gradient(135deg,#15203f,#171d33);border:1px solid var(--line);border-radius:14px;margin:0 0 16px;overflow:hidden}
+.grp-toggle{padding:13px 15px;font-size:14px;font-weight:800;cursor:pointer;user-select:none;display:flex;align-items:center;gap:6px;color:var(--txt)}
+.grp-caret{margin-left:auto;color:var(--acc)}
+.grp-body{display:none;padding:0 13px 14px}
+.grp-body.open{display:block}
+.grp-sub{font-size:11px;color:var(--mut);margin:0 0 12px;line-height:1.55}
+.grp-block{margin-bottom:14px}
+.grp-name{font-size:13px;font-weight:800;color:var(--acc);margin:0 0 4px;display:flex;align-items:center;gap:6px}
+.grp-tag{font-size:10px;color:var(--mut);font-weight:600}
+.gr-head,.gr-row{display:grid;grid-template-columns:15px 22px 1fr 22px 48px 28px 26px;align-items:center;gap:5px;font-size:12px;padding:4px 2px}
+.gr-head{font-size:10px;color:var(--mut);font-weight:700;border-bottom:1px solid var(--line)}
+.gr-row{border-bottom:1px solid rgba(40,49,84,.4)}
+.gr-row:last-child{border-bottom:none}
+.gr-row.adv{background:rgba(46,204,113,.10)}
+.gr-row.adv .gr-pos{color:var(--grn)}
+.gr-row.maybe{background:rgba(255,153,0,.08)}
+.gr-row.maybe .gr-pos{color:var(--acc)}
+.gr-pos{text-align:center;font-weight:800;color:var(--mut)}
+.gr-flag{width:20px;height:15px;border-radius:2px;object-fit:cover;background:var(--card2)}
+.gr-name{font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.gr-c{text-align:center;color:var(--mut)}
+.gr-wdl{text-align:center;color:var(--mut);font-size:11px}
+.gr-pts{text-align:center;font-weight:800;color:var(--txt)}
+.gr-check{color:var(--grn);font-weight:700;font-size:11px;margin-left:3px}
+.thirds{margin-top:4px;padding-top:11px;border-top:1px dashed var(--line)}
+.thirds-hdr{font-size:12px;font-weight:700;color:var(--acc);margin-bottom:7px}
+.third-row{display:flex;align-items:center;gap:6px;font-size:11.5px;padding:3px 0;color:#cdd6f4;border-bottom:1px solid rgba(40,49,84,.3)}
+.third-row.adv{color:var(--grn);font-weight:600}
+.third-row.cut{opacity:.55}
+.third-rk{width:16px;text-align:center;color:var(--mut);font-weight:700;flex:0 0 auto}
 @media(max-width:420px){.tname{font-size:13.5px}.score{font-size:22px;min-width:54px}.flag{width:26px;height:19px}
-  .an-row .lab{min-width:54px}}
+  .an-row .lab{min-width:54px}
+  .pr-name{min-width:46px;font-size:12px}.pr-elo{width:58px;font-size:10px}.pr-pct{width:30px}.pr-row{gap:6px}
+  .pred-leader{font-size:11px}
+  .gr-head,.gr-row{grid-template-columns:14px 18px 1fr 18px 44px 24px 22px;gap:4px;font-size:11px}
+  .gr-flag{width:17px;height:13px}}
 </style>
 </head>
 <body>
@@ -101,6 +165,8 @@ header{padding:18px 16px 12px;position:sticky;top:0;z-index:20;
 </header>
 <div class="wrap">
   <div class="err" id="err"></div>
+  <div id="predict"></div>
+  <div id="groups"></div>
   <div id="list"><div class="empty">⚽ 正在拉取赛程…</div></div>
   <div class="foot">
     比分/赛程源：开源 API（worldcup26.ir）· 对战分析源：martj42 历史库 + eloratings.net<br>
@@ -175,7 +241,8 @@ function analysisHtml(g){
   const eh=ANALYSIS.ELO[g.home_team_name_en], ea=ANALYSIS.ELO[g.away_team_name_en];
   if(!eh||!ea)return "";
   const we=1/(1+Math.pow(10,(ea.elo-eh.elo)/400));
-  const hp=Math.round(we*100), ap=100-hp;
+  const pd=0.28*2*Math.min(we,1-we);
+  const hp=Math.round((we-0.5*pd)*100), dp=Math.round(pd*100), ap=100-hp-dp;
   const anId="an"+g.id, open=STATE.openAn.has(anId);
   const hz=zh(g.home_team_name_en), az=zh(g.away_team_name_en);
   const hh=h2hInfo(g.home_team_name_en,g.away_team_name_en);
@@ -185,13 +252,13 @@ function analysisHtml(g){
   return '<div class="analysis">'+
     '<div class="an-toggle" onclick="toggleAn(\''+anId+'\')">📊 对战分析 '+(open?"▴":"▾")+'</div>'+
     '<div class="an-body'+(open?" open":"")+'" id="'+anId+'">'+
-      '<div class="bal-lbl"><span class="lh">'+hz+' '+hp+'%</span><span class="la">'+ap+'% '+az+'</span></div>'+
-      '<div class="bal"><div class="h" style="width:'+hp+'%"></div><div class="a" style="width:'+ap+'%"></div></div>'+
+      '<div class="bal-lbl"><span class="lh">'+hz+' 胜 '+hp+'%</span><span class="lm">平 '+dp+'%</span><span class="la">'+ap+'% '+az+' 胜</span></div>'+
+      '<div class="bal"><div class="h" style="width:'+hp+'%"></div><div class="d" style="width:'+dp+'%"></div><div class="a" style="width:'+ap+'%"></div></div>'+
       '<div class="an-row"><span class="lab">实力 Elo</span>'+hz+' '+eh.elo+'(世界#'+eh.rank+') &nbsp;｜&nbsp; '+az+' '+ea.elo+'(#'+ea.rank+')</div>'+
       '<div class="an-row"><span class="lab">'+hz+' 近5</span>'+formHtml(g.home_team_name_en)+'</div>'+
       '<div class="an-row"><span class="lab">'+az+' 近5</span>'+formHtml(g.away_team_name_en)+'</div>'+
       h2hRow+
-      '<div class="an-note">⚖ 实力天平为 Elo 评分估算（含平局因素，<b>非官方胜率预测，仅供参考</b>）· 近5场=赛前最近5场（新→旧）· 数据源 martj42 历史库 + eloratings.net</div>'+
+      '<div class="an-note">⚖ 胜/平/负为 Elo 评分推算（<b>非官方预测，仅供参考</b>）· 近5场=赛前最近5场（新→旧）· 数据源 martj42 历史库 + eloratings.net</div>'+
     '</div></div>';
 }
 function toggleAn(id){
@@ -233,7 +300,191 @@ function card(g){
   '</div>';
 }
 
+/* ===== 冠军预测（实时演进）v3 ===== */
+const PRED={open:false,S:300,TOPN:8};
+function tflag(en){return '<img class="ph-flag" loading="lazy" src="'+flagURL(en)+'">';}
+function eloDelta(eh,ea,hg,ag){
+  const we=1/(1+Math.pow(10,(ea-eh)/400));
+  const W=hg>ag?1:(hg===ag?0.5:0);
+  const gd=Math.abs(hg-ag);
+  let G=1;
+  if(gd===2)G=1.5;else if(gd===3)G=1.75;else if(gd>=4)G=1.75+(gd-3)/8;
+  return 60*G*(W-we);
+}
+function computePrediction(){
+  const base={},live={};
+  for(const k in ANALYSIS.ELO){base[k]=ANALYSIS.ELO[k].elo;live[k]=ANALYSIS.ELO[k].elo;}
+  const fin=STATE.games.map(function(g){return {g:g,ms:kickoffMs(g)};})
+    .filter(function(x){var g=x.g;
+      return status(g,x.ms)==="done" && g.home_score!=null && g.away_score!=null
+        && !isNaN(+g.home_score) && !isNaN(+g.away_score)
+        && ANALYSIS.ELO[g.home_team_name_en] && ANALYSIS.ELO[g.away_team_name_en];})
+    .sort(function(a,b){return (a.ms||0)-(b.ms||0);});
+  const history=[];
+  let prevTop=null,prevLeader=null;
+  fin.forEach(function(x,idx){
+    const g=x.g,h=g.home_team_name_en,a=g.away_team_name_en;
+    const hg=+g.home_score,ag=+g.away_score;
+    const eh=live[h],ea=live[a];
+    const W=hg>ag?1:(hg===ag?0.5:0);
+    const delta=eloDelta(eh,ea,hg,ag);
+    live[h]=eh+delta;live[a]=ea-delta;
+    const ranked=Object.keys(live).sort(function(p,q){return live[q]-live[p];});
+    const topN=ranked.slice(0,PRED.TOPN),leader=ranked[0];
+    let upset=false,winner=null,loser=null;
+    if(W!==0.5){
+      if(W===1){winner=h;loser=a;}else{winner=a;loser=h;}
+      const gap=(W===1?ea-eh:eh-ea);
+      if(gap>=80)upset=true;
+    }
+    let reason=null;
+    if(idx===0)reason="opener";
+    else if(leader!==prevLeader)reason="leader";
+    else{
+      const enter=topN.filter(function(t){return prevTop.indexOf(t)<0;});
+      const exit=prevTop.filter(function(t){return topN.indexOf(t)<0;});
+      if(enter.length||exit.length)reason="topset";
+      else if(upset)reason="upset";
+    }
+    if(reason){
+      const d=bj(x.ms),dateTxt=(d.getUTCMonth()+1)+"/"+d.getUTCDate();
+      const matchLine=tflag(h)+zh(h)+" "+hg+"-"+ag+" "+tflag(a)+zh(a);
+      const dR=Math.round(Math.abs(delta));
+      let impact="";
+      if(reason==="opener"){impact="本届揭幕战 · 预测榜首 "+tflag(leader)+zh(leader);}
+      else if(reason==="leader"){impact=tflag(leader)+"<b>"+zh(leader)+" 登顶预测榜</b>（超越 "+zh(prevLeader)+"）";}
+      else if(reason==="topset"){
+        const enter=topN.filter(function(t){return prevTop.indexOf(t)<0;});
+        const exit=prevTop.filter(function(t){return topN.indexOf(t)<0;});
+        const parts=[];
+        enter.forEach(function(t){parts.push(tflag(t)+zh(t)+" 跻身夺冠前8");});
+        exit.forEach(function(t){parts.push(zh(t)+" 跌出前8");});
+        impact=parts.join("，");
+      } else {impact="<b>"+zh(winner)+"</b> 爆冷胜 "+zh(loser)+"，"+zh(winner)+" Elo +"+dR;}
+      const prefix=upset?"⚡ ":"";
+      history.push('<div class="ph-item'+(upset?" up":"")+'"><span class="ph-date">'+dateTxt+
+        '</span><span class="ph-txt">'+prefix+matchLine+"｜"+impact+"</span></div>");
+    }
+    prevTop=topN;prevLeader=leader;
+  });
+  return {live:live,base:base,finCount:fin.length,history:history};
+}
+function renderPredict(){
+  const el=document.getElementById("predict");
+  if(!el)return;
+  if(!STATE.ok||!ANALYSIS||!ANALYSIS.ELO){el.innerHTML="";return;}
+  const P=computePrediction(),live=P.live,S=PRED.S;
+  const names=Object.keys(live),w={};let tot=0;
+  names.forEach(function(n){var x=Math.pow(10,live[n]/S);w[n]=x;tot+=x;});
+  const ranked=names.sort(function(a,b){return live[b]-live[a];});
+  const top=ranked.slice(0,PRED.TOPN),leaderPct=w[top[0]]/tot*100;
+  const rows=top.map(function(n,i){
+    const pct=w[n]/tot*100,chg=Math.round(live[n]-P.base[n]);
+    const chgHtml=chg>0?'<span class="pr-up">↑'+chg+'</span>':(chg<0?'<span class="pr-dn">↓'+(-chg)+'</span>':'<span class="pr-flat">–</span>');
+    const barW=(pct/leaderPct*100).toFixed(0);
+    return '<div class="pr-row"><span class="pr-rk r'+(i+1)+'">'+(i+1)+'</span>'+
+      '<img class="pr-flag" loading="lazy" src="'+flagURL(n)+'">'+
+      '<span class="pr-name">'+zh(n)+'</span>'+
+      '<span class="pr-bar"><span style="width:'+barW+'%"></span></span>'+
+      '<span class="pr-pct">'+pct.toFixed(0)+'%</span>'+
+      '<span class="pr-elo">'+Math.round(live[n])+' '+chgHtml+'</span></div>';
+  }).join("");
+  let hist=P.history.slice().reverse().join("");
+  const baseTop=Object.keys(P.base).sort(function(a,b){return P.base[b]-P.base[a];}).slice(0,3).map(zh).join(" · ");
+  hist+='<div class="ph-item ph-base"><span class="ph-date">赛前</span><span class="ph-txt">基准实力榜：'+baseTop+' 领跑</span></div>';
+  el.innerHTML='<div class="pred-card"><div class="pred-toggle" onclick="togglePred()">'+
+    '<span>📈 冠军预测 · 实时演进</span>'+
+    '<span class="pred-leader">领跑 <img class="pr-flag tiny" loading="lazy" src="'+flagURL(top[0])+'">'+zh(top[0])+'</span>'+
+    '<span class="pred-caret">'+(PRED.open?"▴":"▾")+'</span></div>'+
+    '<div class="pred-body'+(PRED.open?" open":"")+'">'+
+    '<div class="pred-sub">截至 '+P.finCount+' 场已结束 · 每场赛后自动重算 · ⚠️ 非官方估算（按 Elo 实力·中性场地推算），仅供参考</div>'+
+    '<div class="pred-rank">'+rows+'</div>'+
+    '<div class="pred-hist-hdr">📜 预测演进史 <span class="phh-sub">（仅记录榜首易主 / 冷门 / 热门圈变动）</span></div>'+
+    '<div class="pred-hist">'+hist+'</div>'+
+    '<div class="an-note">夺冠热度＝按当前 Elo 实力的相对占比（48 队归一化，未剔除已淘汰队，小组赛后更准）· Elo 复盘采用 eloratings.net 世界杯算法（K=60），与官方发布值可能有微小差异 · 仅供娱乐参考</div>'+
+    '</div></div>';
+}
+function togglePred(){PRED.open=!PRED.open;renderPredict();}
+/* ===== 小组积分榜 + 出线形势 v4 ===== */
+const GRP={open:false};
+function computeGroups(){
+  const G={};
+  STATE.games.forEach(function(g){
+    if(g.type!=="group"||!g.group)return;
+    const L=g.group,h=g.home_team_name_en,a=g.away_team_name_en;
+    if(!ANALYSIS.ELO[h]||!ANALYSIS.ELO[a])return;
+    if(!G[L])G[L]={};
+    if(!G[L][h])G[L][h]={t:h,p:0,w:0,d:0,l:0,gf:0,ga:0};
+    if(!G[L][a])G[L][a]={t:a,p:0,w:0,d:0,l:0,gf:0,ga:0};
+    const ms=kickoffMs(g);
+    if(status(g,ms)==="done"&&g.home_score!=null&&g.away_score!=null&&!isNaN(+g.home_score)&&!isNaN(+g.away_score)){
+      const hg=+g.home_score,ag=+g.away_score,H=G[L][h],A=G[L][a];
+      H.p++;A.p++;H.gf+=hg;H.ga+=ag;A.gf+=ag;A.ga+=hg;
+      if(hg>ag){H.w++;A.l++;}else if(hg<ag){A.w++;H.l++;}else{H.d++;A.d++;}
+    }
+  });
+  return G;
+}
+function sortTbl(arr){
+  arr.forEach(function(s){s.pts=s.w*3+s.d;s.gd=s.gf-s.ga;});
+  return arr.sort(function(a,b){return (b.pts-a.pts)||(b.gd-a.gd)||(b.gf-a.gf)||(a.t<b.t?-1:1);});
+}
+function renderGroups(){
+  const el=document.getElementById("groups");
+  if(!el)return;
+  if(!STATE.ok||!ANALYSIS||!ANALYSIS.ELO){el.innerHTML="";return;}
+  const G=computeGroups(),letters=Object.keys(G).sort();
+  if(!letters.length){el.innerHTML="";return;}
+  const standings={},thirds=[];
+  letters.forEach(function(L){
+    const arr=sortTbl(Object.keys(G[L]).map(function(k){return G[L][k];}));
+    standings[L]=arr;
+    if(arr[2])thirds.push(Object.assign({grp:L},arr[2]));
+  });
+  const thirdsRanked=thirds.slice().sort(function(a,b){return (b.pts-a.pts)||(b.gd-a.gd)||(b.gf-a.gf)||(a.t<b.t?-1:1);});
+  const advThirds={};
+  thirdsRanked.slice(0,8).forEach(function(x){advThirds[x.grp]=true;});
+  let blocks="";
+  letters.forEach(function(L){
+    const arr=standings[L],started=arr.some(function(x){return x.p>0;});
+    let rows='<div class="gr-head"><span class="gr-pos">#</span><span></span><span>球队</span><span class="gr-c">场</span><span class="gr-wdl">胜平负</span><span class="gr-c">净</span><span class="gr-c">分</span></div>';
+    arr.forEach(function(s,i){
+      let cls="gr-row",isAdv=false;
+      if(started){
+        if(i<2){cls+=" adv";isAdv=true;}
+        else if(i===2&&advThirds[L]){cls+=" adv";isAdv=true;}
+        else if(i===2){cls+=" maybe";}
+      }
+      const chk=isAdv?'<span class="gr-check">✓</span>':'';
+      rows+='<div class="'+cls+'"><span class="gr-pos">'+(i+1)+'</span>'+
+        '<img class="gr-flag" loading="lazy" src="'+flagURL(s.t)+'">'+
+        '<span class="gr-name">'+zh(s.t)+chk+'</span>'+
+        '<span class="gr-c">'+s.p+'</span>'+
+        '<span class="gr-wdl">'+s.w+'-'+s.d+'-'+s.l+'</span>'+
+        '<span class="gr-c">'+(s.gd>0?"+":"")+s.gd+'</span>'+
+        '<span class="gr-pts">'+s.pts+'</span></div>';
+    });
+    blocks+='<div class="grp-block"><div class="grp-name">小组 '+L+(started?"":' <span class="grp-tag">· 未开赛</span>')+'</div>'+rows+'</div>';
+  });
+  let tr='<div class="thirds"><div class="thirds-hdr">🔢 最佳第3名排名（前8出线）</div>';
+  thirdsRanked.forEach(function(x,i){
+    const adv=i<8;
+    tr+='<div class="third-row'+(adv?" adv":" cut")+'"><span class="third-rk">'+(i+1)+'</span>'+
+      '<img class="gr-flag" loading="lazy" src="'+flagURL(x.t)+'">'+
+      '<span>'+zh(x.t)+'（'+x.grp+'组）'+(x.p>0?" "+x.pts+"分 "+(x.gd>0?"+":"")+x.gd:" 未赛")+'</span>'+(adv?'<span class="gr-check">✓</span>':'')+'</div>';
+  });
+  tr+='</div>';
+  el.innerHTML='<div class="grp-card"><div class="grp-toggle" onclick="toggleGrp()">'+
+    '<span>📋 小组积分榜 · 出线形势</span><span class="grp-caret">'+(GRP.open?"▴":"▾")+'</span></div>'+
+    '<div class="grp-body'+(GRP.open?" open":"")+'">'+
+    '<div class="grp-sub">每组前 2 直接出线，外加 12 组中成绩最好的 8 个第 3 名，共 <b>32 队</b>晋级 · <span style="color:var(--grn)">绿色＝当前出线区</span>（按现有战绩，若此刻结束）· 实时按比分更新</div>'+
+    blocks+tr+
+    '</div></div>';
+}
+function toggleGrp(){GRP.open=!GRP.open;renderGroups();}
 function render(){
+  renderPredict();
+  renderGroups();
   const all=STATE.games.map(g=>({g,ms:kickoffMs(g),st:status(g,kickoffMs(g))}));
   const counts={soon:0,live:0,done:0,all:all.length};
   all.forEach(x=>{if(x.st!=="all")counts[x.st]++});
