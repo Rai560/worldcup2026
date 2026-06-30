@@ -147,6 +147,73 @@ header{padding:18px 16px 12px;position:sticky;top:0;z-index:20;
   .pred-leader{font-size:11px}
   .gr-head,.gr-row{grid-template-columns:14px 18px 1fr 18px 44px 24px 22px;gap:4px;font-size:11px}
   .gr-flag{width:17px;height:13px}}
+/* ===== Aki 赛前预测模块 ===== */
+.ak-card{background:linear-gradient(135deg,#1a2138,#161d33);border:1px solid var(--line);border-radius:16px;margin:0 0 14px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,.28)}
+.ak-toggle{display:flex;align-items:center;gap:8px;padding:14px 16px;cursor:pointer;background:linear-gradient(90deg,rgba(255,153,0,.13),transparent)}
+.ak-ico{font-size:20px}
+.ak-title{font-weight:700;font-size:15px;color:var(--txt)}
+.ak-stage{margin-left:auto;font-size:12px;color:var(--acc);background:rgba(255,153,0,.13);padding:3px 10px;border-radius:20px;white-space:nowrap}
+.ak-caret{margin-left:8px;color:var(--mut)}
+.ak-body{display:none;padding:4px 14px 14px}
+.ak-body.open{display:block}
+.ak-bw{display:flex;gap:10px;align-items:flex-start;margin:12px 2px 14px}
+.ak-av{flex:none;width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#FF9900,#ff6a00);display:flex;align-items:center;justify-content:center;font-size:17px;box-shadow:0 2px 8px rgba(255,153,0,.4)}
+.ak-say{background:var(--card2);border:1px solid var(--line);border-radius:4px 14px 14px 14px;padding:10px 13px;font-size:13.5px;line-height:1.62;color:var(--txt)}
+.ak-nm{display:block;font-size:11px;color:var(--acc);font-weight:700;margin-bottom:3px}
+.ak-stats{background:rgba(255,153,0,.06);border:1px solid rgba(255,153,0,.22);border-radius:12px;padding:11px 13px;margin:8px 2px 4px;font-size:12.5px}
+.ak-stats-empty{color:var(--mut)}
+.ak-st-hd{font-weight:700;color:var(--acc);margin-bottom:7px;display:flex;align-items:center;gap:8px}
+.ak-st-row{display:flex;flex-wrap:wrap;gap:6px 16px;margin-bottom:6px;color:var(--mut)}
+.ak-st-row b{color:var(--txt)}
+.ak-st-tier{color:var(--mut);margin-bottom:6px}
+.ak-st-vs{color:var(--mut);font-size:12px;border-top:1px dashed var(--line);padding-top:6px}
+.ak-streak{font-size:12px;padding:1px 8px;border-radius:20px;background:var(--card2)}
+.ak-review{background:rgba(61,165,255,.07);border:1px solid rgba(61,165,255,.25);border-radius:12px;padding:11px 13px;margin:8px 2px 14px;font-size:13px;line-height:1.62}
+.ak-rv-first{color:var(--txt)}
+.ak-rv-hd{font-weight:700;color:var(--blue);margin-bottom:5px;display:flex;align-items:center;gap:6px}
+.ak-hits{margin-left:auto;font-size:12px;background:rgba(61,165,255,.18);padding:2px 9px;border-radius:20px}
+.ak-rv-sum{margin-bottom:6px}
+.ak-rv-item{padding:5px 0;border-top:1px dashed var(--line);font-size:12.5px;color:var(--mut)}
+.ak-rv-item b{color:var(--txt)}
+.ak-ok{color:var(--grn)}
+.ak-no{color:var(--red)}
+.ak-match{background:var(--card2);border:1px solid var(--line);border-radius:14px;padding:13px 14px;margin:0 2px 12px}
+.ak-mhead{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--mut);margin-bottom:11px}
+.ak-mt{color:var(--acc);font-weight:700;font-size:14px}
+.ak-mv{margin-left:auto}
+.ak-tier{font-size:11px;padding:2px 8px;border-radius:20px;font-weight:600}
+.akt-stable{background:rgba(46,204,113,.16);color:var(--grn)}
+.akt-lean{background:rgba(255,153,0,.16);color:var(--acc)}
+.akt-long{background:rgba(255,85,102,.16);color:var(--red)}
+.ak-teams{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:12px}
+.ak-team{display:flex;align-items:center;gap:7px;font-weight:600;font-size:14.5px}
+.ak-team img{width:27px;height:18px;border-radius:3px;object-fit:cover}
+.ak-team.away{flex-direction:row-reverse}
+.ak-vs{font-size:11px;color:var(--mut)}
+.ak-pick{text-align:center;font-size:14px;margin-bottom:11px}
+.ak-pick .pk{color:var(--grn);font-weight:700}
+.ak-score{font-size:22px;font-weight:800;color:var(--acc);letter-spacing:1px;vertical-align:-2px}
+.ak-wld-lbl{display:flex;justify-content:space-between;font-size:11px;color:var(--mut);margin-bottom:4px}
+.ak-wld{display:flex;height:7px;border-radius:4px;overflow:hidden;margin-bottom:11px}
+.ak-wld .wh{background:var(--grn)}
+.ak-wld .wd{background:#4a5578}
+.ak-wld .wa{background:var(--red)}
+.ak-conf{display:flex;align-items:center;gap:9px;font-size:12px;color:var(--mut);margin-bottom:4px}
+.ak-cbar{flex:1;height:7px;background:var(--line);border-radius:4px;overflow:hidden}
+.ak-cbar>span{display:block;height:100%;background:linear-gradient(90deg,#FF9900,#ff6a00)}
+.ak-machine{font-size:12px;color:var(--mut);background:rgba(255,255,255,.03);border-radius:8px;padding:7px 10px;margin-top:9px}
+.ak-machine b{color:var(--txt)}
+.ak-mok{color:var(--mut)}
+.ak-mdiff{color:var(--acc);font-weight:600}
+.ak-result{font-size:12.5px;margin-top:8px;padding-top:8px;border-top:1px dashed var(--line);color:var(--mut)}
+.ak-hl{background:var(--card2);border:1px solid var(--line);border-radius:12px;padding:10px 13px;margin:0 2px 12px}
+.ak-hl-hd{font-weight:700;font-size:13px;margin-bottom:7px}
+.ak-hl-item{font-size:12.5px;color:var(--mut);padding:4px 0}
+.ak-hl-item b{color:var(--txt)}
+.ak-hist-hd{font-size:13px;font-weight:700;color:var(--mut);margin:6px 2px 8px;cursor:pointer;display:flex;align-items:center;gap:6px}
+.ak-hist-item{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:9px 12px;margin:0 2px 8px;font-size:12.5px;color:var(--mut)}
+.ak-hist-item .ak-hd{color:var(--txt);font-weight:600;margin-bottom:3px}
+.ak-disc{font-size:11px;color:var(--mut);text-align:center;padding:8px 8px 2px;line-height:1.5}
 </style>
 </head>
 <body>
@@ -165,6 +232,7 @@ header{padding:18px 16px 12px;position:sticky;top:0;z-index:20;
 </header>
 <div class="wrap">
   <div class="err" id="err"></div>
+  <div id="akipredict"></div>
   <div id="predict"></div>
   <div id="groups"></div>
   <div id="list"><div class="empty">⚽ 正在拉取赛程…</div></div>
@@ -369,7 +437,103 @@ function computePrediction(){
   });
   return {live:live,base:base,finCount:fin.length,history:history};
 }
-function renderPredict(){
+
+/* ===== Aki 赛前预测 渲染 ===== */
+let AKIPRED=null;
+const AKI={open:true,hist:false};
+function akiBubble(name,text){
+  return '<div class="ak-bw"><div class="ak-av">\u26bd</div><div class="ak-say"><span class="ak-nm">'+name+'</span>'+text+'</div></div>';
+}
+function akiPct(o){return o.n>0?Math.round(o.hit/o.n*100)+'%':'\u2014';}
+function akiStatsBar(s){
+  if(!s)return '';
+  const a=s.aki,m=s.machine;
+  if(!a||a.winner.n===0){
+    return '<div class="ak-stats ak-stats-empty">\ud83d\udcc8 <b>Aki \u6218\u7ee9\u6863\u6848</b> \u00b7 \u5c1a\u672a\u5f00\u5f20\uff0c\u660e\u5929\u7b2c\u4e00\u6b21\u590d\u76d8\u540e\u5f00\u59cb\u8bb0\u8d26</div>';
+  }
+  const t=a.tier;
+  const tierRow='\ud83d\udfe2\u7a33\u80c6 '+t.stable.hit+'/'+t.stable.n+'\u3000\ud83d\udfe1\u504f\u5411 '+t.lean.hit+'/'+t.lean.n+'\u3000\ud83d\udd34\u640f\u51b7\u95e8 '+t.longshot.hit+'/'+t.longshot.n;
+  const diff=a.winner.hit-m.winner.hit;
+  const vs=diff>0?('<span class="ak-ok">\u9886\u5148\u673a\u5668 '+diff+' \u573a</span>'):(diff<0?('<span class="ak-no">\u843d\u540e\u673a\u5668 '+(-diff)+' \u573a</span>'):'<span>\u4e0e\u673a\u5668\u6253\u5e73</span>');
+  let streakTxt='';
+  if(s.streak&&s.streak.count>=2){
+    streakTxt=s.streak.type==='win'?'<span class="ak-streak ak-ok">\ud83d\udd25 '+s.streak.count+' \u8fde\u4e2d</span>':'<span class="ak-streak ak-no">\ud83e\udd76 '+s.streak.count+' \u8fde\u6302</span>';
+  }
+  return '<div class="ak-stats"><div class="ak-st-hd">\ud83d\udcc8 Aki \u6218\u7ee9\u6863\u6848 '+streakTxt+'</div>'+
+    '<div class="ak-st-row"><span>\u664b\u7ea7\u547d\u4e2d</span><b>'+a.winner.hit+'/'+a.winner.n+' ('+akiPct(a.winner)+')</b><span>\u7cbe\u786e\u6bd4\u5206</span><b>'+a.score.hit+'/'+a.score.n+' ('+akiPct(a.score)+')</b></div>'+
+    '<div class="ak-st-tier">'+tierRow+'</div>'+
+    '<div class="ak-st-vs">\ud83e\udd16 \u673a\u5668\u5bf9\u7167\uff1a\u673a\u5668\u664b\u7ea7 '+m.winner.hit+'/'+m.winner.n+' ('+akiPct(m.winner)+') \u00b7 \u6211 '+vs+'</div></div>';
+}
+function akiHighlights(hl){
+  if(!hl||!hl.length)return '';
+  const items=hl.slice(-4).reverse().map(function(h){
+    const ico=h.type==='clutch'?'\ud83d\udd25':'\ud83d\ude05';
+    const cls=h.type==='clutch'?'ak-ok':'ak-no';
+    return '<div class="ak-hl-item"><span class="'+cls+'">'+ico+'</span> <b>'+h.date+'</b> '+h.match+' \u00b7 '+h.text+'</div>';
+  }).join('');
+  return '<div class="ak-hl"><div class="ak-hl-hd">\u2728 \u540d\u573a\u9762</div>'+items+'</div>';
+}
+const TIER_META={stable:{t:'\ud83d\udfe2 \u7a33\u80c6',c:'akt-stable'},lean:{t:'\ud83d\udfe1 \u504f\u5411',c:'akt-lean'},longshot:{t:'\ud83d\udd34 \u640f\u51b7\u95e8',c:'akt-long'}};
+function akiMatchCard(m){
+  const hz=zh(m.homeEn),az=zh(m.awayEn),a=m.aki,mc=m.machine,w=m.wld||[33,34,33];
+  const tm=TIER_META[a.tier]||TIER_META.lean;
+  const same=mc&&mc.pickEn===a.pickEn&&mc.score===a.score;
+  const machineRow=mc?('<div class="ak-machine">\ud83e\udd16 \u673a\u5668\u7248(\u7eaf Elo)\uff1a\u62bc <b>'+zh(mc.pickEn)+'</b> '+mc.score+(same?' <span class="ak-mok">\uff1d \u8ddf\u6211\u4e00\u81f4</span>':' <span class="ak-mdiff">\u2260 \u6211\u4e0d\u8fd9\u4e48\u770b</span>')+'</div>'):'';
+  let resBadge='';
+  if(m.result){
+    const r=m.result;
+    const wb=r.akiWinner?'<span class="ak-ok">\u664b\u7ea7\u2713</span>':'<span class="ak-no">\u664b\u7ea7\u2717</span>';
+    const sb=r.akiScore?'<span class="ak-ok">\u6bd4\u5206\u2713</span>':'<span class="ak-no">\u6bd4\u5206\u2717</span>';
+    resBadge='<div class="ak-result">\u5b9e\u9645 '+hz+' '+r.hs+'-'+r.as+' '+az+' \u00b7 \u664b\u7ea7 '+zh(r.advance)+' \uff5c \u6211\uff1a'+wb+' '+sb+'</div>';
+  }
+  return '<div class="ak-match"><div class="ak-mhead"><span class="ak-mt">'+m.time+'</span><span class="ak-tier '+tm.c+'">'+tm.t+'</span><span class="ak-mv">\ud83d\udccd'+(m.venue||'')+'</span></div>'+
+    '<div class="ak-teams"><span class="ak-team"><img loading="lazy" src="'+flagURL(m.homeEn)+'">'+hz+'</span><span class="ak-vs">VS</span><span class="ak-team away"><img loading="lazy" src="'+flagURL(m.awayEn)+'">'+az+'</span></div>'+
+    '<div class="ak-pick">\ud83c\udfaf \u6211\u62bc <span class="pk">'+(a.pickNote||zh(a.pickEn))+'</span> \u00b7 \u6bd4\u5206 <span class="ak-score">'+a.score+'</span></div>'+
+    '<div class="ak-wld-lbl"><span>'+hz+' '+w[0]+'%</span><span>\u5e73 '+w[1]+'%</span><span>'+w[2]+'% '+az+'</span></div>'+
+    '<div class="ak-wld"><span class="wh" style="width:'+w[0]+'%"></span><span class="wd" style="width:'+w[1]+'%"></span><span class="wa" style="width:'+w[2]+'%"></span></div>'+
+    '<div class="ak-conf">\u4fe1\u5fc3 <span class="ak-cbar"><span style="width:'+a.conf+'%"></span></span> '+a.conf+'%</div>'+
+    akiBubble('Aki \u8bf4',a.reason)+machineRow+resBadge+'</div>';
+}
+function renderAkiPredict(){
+  const el=document.getElementById("akipredict");
+  if(!el)return;
+  if(!AKIPRED||!AKIPRED.entries||!AKIPRED.entries.length){el.innerHTML="";return;}
+  const ents=AKIPRED.entries,cur=ents[ents.length-1];
+  let rv="";
+  if(cur.review){
+    if(cur.review.first){
+      rv='<div class="ak-review ak-rv-first">'+cur.review.summary+'</div>';
+    }else{
+      const items=(cur.review.items||[]).map(function(it){
+        return '<div class="ak-rv-item"><b>'+it.match+'</b>\uff1a\u62bc '+it.pick+' \u2192 \u5b9e\u9645 '+it.actual+' '+it.tag+(it.note?'\u3000'+it.note:'')+'</div>';
+      }).join("");
+      rv='<div class="ak-review"><div class="ak-rv-hd">\ud83d\udcca \u6628\u65e5\u590d\u76d8 <span class="ak-hits">\u547d\u4e2d '+cur.review.hits+'/'+cur.review.total+'</span></div><div class="ak-rv-sum">'+cur.review.summary+'</div>'+items+'</div>';
+    }
+  }
+  const cards=cur.matches.map(function(m){return akiMatchCard(m);}).join("");
+  let histHtml="";
+  if(ents.length>1){
+    const past=ents.slice(0,-1).reverse();
+    const items=past.map(function(e){
+      const ms=e.matches.map(function(m){
+        let mark='';
+        if(m.result)mark=m.result.akiWinner?' <span class="ak-ok">\u2713</span>':' <span class="ak-no">\u2717</span>';
+        return zh(m.homeEn)+' '+m.aki.score+' '+zh(m.awayEn)+mark;
+      }).join('\uff1b');
+      const hit=(e.review&&!e.review.first)?'\u3000\u547d\u4e2d '+e.review.hits+'/'+e.review.total:'';
+      return '<div class="ak-hist-item"><div class="ak-hd">'+e.dayLabel+' \u00b7 '+e.stage+hit+'</div>'+ms+'</div>';
+    }).join("");
+    histHtml='<div class="ak-hist-hd" onclick="akiToggleHist()">\ud83d\udcdc \u5386\u53f2\u9884\u6d4b ('+past.length+') '+(AKI.hist?"\u25b4":"\u25be")+'</div>'+(AKI.hist?items:"");
+  }
+  el.innerHTML='<div class="ak-card"><div class="ak-toggle" onclick="akiToggle()"><span class="ak-ico">\ud83d\udd2e</span><span class="ak-title">Aki \u7684\u8d5b\u524d\u9884\u6d4b</span><span class="ak-stage">'+cur.dayLabel+'</span><span class="ak-caret">'+(AKI.open?"\u25b4":"\u25be")+'</span></div>'+
+    '<div class="ak-body'+(AKI.open?" open":"")+'">'+akiStatsBar(AKIPRED.stats)+akiBubble('Aki \u00b7 '+cur.stage,cur.intro)+rv+cards+akiHighlights(AKIPRED.stats&&AKIPRED.stats.highlights)+histHtml+'<div class="ak-disc">'+(AKIPRED.note||'')+'</div></div></div>';
+}
+function akiToggle(){AKI.open=!AKI.open;renderAkiPredict();}
+function akiToggleHist(){AKI.hist=!AKI.hist;renderAkiPredict();}
+async function loadAkiPred(){
+  try{const r=await fetch('predictions.json?t='+Math.floor(Date.now()/60000),{cache:'no-store'});if(r.ok){AKIPRED=await r.json();renderAkiPredict();}}catch(e){}
+}
+function renderPredict(){renderAkiPredict();
   const el=document.getElementById("predict");
   if(!el)return;
   if(!STATE.ok||!ANALYSIS||!ANALYSIS.ELO){el.innerHTML="";return;}
@@ -540,6 +704,7 @@ async function load(manual){
 }
 load();
 setInterval(load,60000);
+loadAkiPred();setInterval(loadAkiPred,300000);
 setInterval(()=>{if(STATE.tab==="soon"||STATE.tab==="all")render();},30000);
 </script>
 </body>
