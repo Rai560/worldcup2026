@@ -1,0 +1,137 @@
+{
+  "updatedBJ": "2026-06-30 22:00",
+  "note": "Aki 的赛前预测 · 每日北京时间下午自动更新 · 基于实时 Elo + 状态 + 历史交手的大胆估算 · 非官方，纯属娱乐，仅供参考",
+  "stats": {
+    "aki": {
+      "winner": {
+        "n": 0,
+        "hit": 0
+      },
+      "score": {
+        "n": 0,
+        "hit": 0
+      },
+      "tier": {
+        "stable": {
+          "n": 0,
+          "hit": 0
+        },
+        "lean": {
+          "n": 0,
+          "hit": 0
+        },
+        "longshot": {
+          "n": 0,
+          "hit": 0
+        }
+      }
+    },
+    "machine": {
+      "winner": {
+        "n": 0,
+        "hit": 0
+      },
+      "score": {
+        "n": 0,
+        "hit": 0
+      }
+    },
+    "streak": {
+      "type": "none",
+      "count": 0
+    },
+    "highlights": []
+  },
+  "entries": [
+    {
+      "date": "2026-07-01",
+      "dayLabel": "7月1日 周三",
+      "stage": "16强淘汰赛 · 首日",
+      "intro": "16强首日，三场硬仗，我来大胆开个盲盒。淘汰赛没有平局，90 分钟打平就加时点球见真章——所以我连点球都给你押上。",
+      "review": {
+        "first": true,
+        "summary": "📋 先把这栏目的规矩说清楚（就第一天唠叨这一次）：①每场我按信心分三档——🟢稳胆(>70%)、🟡偏向(50-70%)、🔴搏冷门(<50%)，赛后分档给我算账，照出我是真有判断还是虚高自信；②每场我额外派一个「无脑跟 Elo 的机器版」陪跑，赛季末看我的直觉调整到底跑没跑赢冷冰冰的算法；③押中我邀功，翻车我认栽，绝不嘴硬。今天第一天没有昨天可复盘——从明天起，这块先给我前一天算完账，再开新预测。"
+      },
+      "matches": [
+        {
+          "time": "01:00",
+          "homeEn": "Ivory Coast",
+          "awayEn": "Norway",
+          "venue": "达拉斯",
+          "eloH": 1744,
+          "eloA": 1919,
+          "wld": [
+            19,
+            15,
+            66
+          ],
+          "aki": {
+            "pickEn": "Norway",
+            "pickNote": "挪威晋级",
+            "score": "0-1",
+            "conf": 60,
+            "reason": "挪威实时 Elo 高出近 180 分，淘汰赛里这档差距很说明问题。两队历史没交过手，但挪威这波有哈兰德式的身体和效率，科特迪瓦面对北欧的对抗会吃亏。我压挪威小胜，闷一点的 0-1。",
+            "tier": "lean"
+          },
+          "machine": {
+            "pickEn": "Norway",
+            "score": "0-1"
+          },
+          "result": null
+        },
+        {
+          "time": "05:00",
+          "homeEn": "France",
+          "awayEn": "Sweden",
+          "venue": "纽约",
+          "eloH": 2123,
+          "eloA": 1742,
+          "wld": [
+            87,
+            6,
+            7
+          ],
+          "aki": {
+            "pickEn": "France",
+            "pickNote": "法国晋级",
+            "score": "2-0",
+            "conf": 80,
+            "reason": "这场没什么悬念，我最有把握的一场。法国实时 Elo 全场最高之一，对瑞典是碾压级；模型给法国 87% 晋级。两队交手 23 次法国近年占绝对上风。瑞典进攻端打不开，法国 2-0 干净拿下。",
+            "tier": "stable"
+          },
+          "machine": {
+            "pickEn": "France",
+            "score": "2-0"
+          },
+          "result": null
+        },
+        {
+          "time": "09:00",
+          "homeEn": "Mexico",
+          "awayEn": "Ecuador",
+          "venue": "墨西哥城",
+          "eloH": 1935,
+          "eloA": 1901,
+          "wld": [
+            42,
+            25,
+            32
+          ],
+          "aki": {
+            "pickEn": "Mexico",
+            "pickNote": "墨西哥点球晋级",
+            "score": "1-1",
+            "conf": 52,
+            "reason": "三场里最难，coin flip 偏墨西哥。两队 Elo 几乎贴脸，状态都在线。我判断 90 分钟很可能 1-1 战平，拖进加时甚至点球。加分项给墨西哥——东道主、主场就在墨西哥城（海拔+主场氛围是实打实的优势）。我赌墨西哥点球晋级，但这场你别太自信。",
+            "tier": "lean"
+          },
+          "machine": {
+            "pickEn": "Mexico",
+            "score": "1-1"
+          },
+          "result": null
+        }
+      ]
+    }
+  ]
+}
