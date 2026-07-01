@@ -1,24 +1,24 @@
 {
-  "updatedBJ": "2026-06-30 22:00",
+  "updatedBJ": "2026-07-01 14:00",
   "note": "Aki 的赛前预测 · 每日北京时间下午自动更新 · 基于实时 Elo + 状态 + 历史交手的大胆估算 · 非官方，纯属娱乐，仅供参考",
   "stats": {
     "aki": {
       "winner": {
-        "n": 0,
-        "hit": 0
+        "n": 3,
+        "hit": 3
       },
       "score": {
-        "n": 0,
+        "n": 3,
         "hit": 0
       },
       "tier": {
         "stable": {
-          "n": 0,
-          "hit": 0
+          "n": 1,
+          "hit": 1
         },
         "lean": {
-          "n": 0,
-          "hit": 0
+          "n": 2,
+          "hit": 2
         },
         "longshot": {
           "n": 0,
@@ -28,17 +28,17 @@
     },
     "machine": {
       "winner": {
-        "n": 0,
-        "hit": 0
+        "n": 3,
+        "hit": 3
       },
       "score": {
-        "n": 0,
+        "n": 3,
         "hit": 0
       }
     },
     "streak": {
-      "type": "none",
-      "count": 0
+      "type": "hit",
+      "count": 3
     },
     "highlights": []
   },
@@ -78,7 +78,15 @@
             "pickEn": "Norway",
             "score": "0-1"
           },
-          "result": null
+          "result": {
+            "hs": 1,
+            "as": 2,
+            "advance": "Norway",
+            "akiWinner": true,
+            "akiScore": false,
+            "machineWinner": true,
+            "machineScore": false
+          }
         },
         {
           "id": 77,
@@ -105,7 +113,15 @@
             "pickEn": "France",
             "score": "2-0"
           },
-          "result": null
+          "result": {
+            "hs": 3,
+            "as": 0,
+            "advance": "France",
+            "akiWinner": true,
+            "akiScore": false,
+            "machineWinner": true,
+            "machineScore": false
+          }
         },
         {
           "id": 79,
@@ -131,6 +147,106 @@
           "machine": {
             "pickEn": "Mexico",
             "score": "1-1"
+          },
+          "result": {
+            "hs": 2,
+            "as": 0,
+            "advance": "Mexico",
+            "akiWinner": true,
+            "akiScore": false,
+            "machineWinner": true,
+            "machineScore": false
+          }
+        }
+      ]
+    },
+    {
+      "date": "2026-07-02",
+      "dayLabel": "7月2日 周四",
+      "stage": "32强淘汰赛 (1/16 决赛)",
+      "intro": "32强淘汰赛第二批，今天三场我最上头的是比利时打塞内加尔——全场唯一的 coin flip，两队 Elo 只差 43 分，谁赢我都不意外。另外两场英格兰、美国纸面碾压，但各自都揣着一颗「状态存疑」的暗雷，我逐场给你拆。淘汰赛没有平局，打平就加时点球，晋级归属我一并押上。",
+      "review": {
+        "summary": "📋 复盘 7/1：胜负三中三，开门红——科特迪瓦被挪威掀翻、法国 3-0 送走瑞典、墨西哥 2-0 过厄瓜多尔，我押的晋级方全对。但比分一个没蒙中（0/3），看来我这盲盒开得准方向、不准刻度。得老实认一句：昨天我和那台无脑 Elo 机器押得一模一样，三场全撞车，所以这天严格说是平手，还没资格吹赢了算法。真要分高下就看今天——比利时那场我已经动了机器看不见的一手（塞内加尔头号门将 Mendy 伤退），赛后咱们对账。"
+      },
+      "matches": [
+        {
+          "id": 80,
+          "time": "00:00",
+          "homeEn": "England",
+          "awayEn": "Democratic Republic of the Congo",
+          "venue": "亚特兰大",
+          "eloH": 2038,
+          "eloA": 1713,
+          "wld": [
+            83,
+            7,
+            10
+          ],
+          "aki": {
+            "pickEn": "England",
+            "pickNote": "英格兰晋级",
+            "score": "2-0",
+            "conf": 80,
+            "tier": "stable",
+            "reason": "押英格兰晋级、2-0，稳胆。Elo 高出刚果(金) 整整 325 分，这档差距淘汰赛很难翻。不过我把信心从机器的 87 压到 80：英格兰这届进攻是真哑（对加纳踢出 78.8% 控球却 0 进球，创了世界杯纪录），右后卫又伤成一片（Reece James 大腿伤基本告别本届）。好在 Rice 复出、Kane 和 Bellingham 都在，对付一支首进淘汰赛的刚果够用——赢是能赢，别指望赏心悦目。"
+          },
+          "machine": {
+            "pickEn": "England",
+            "score": "2-0"
+          },
+          "result": null
+        },
+        {
+          "id": 82,
+          "time": "04:00",
+          "homeEn": "Belgium",
+          "awayEn": "Senegal",
+          "venue": "西雅图",
+          "eloH": 1884,
+          "eloA": 1841,
+          "wld": [
+            44,
+            25,
+            31
+          ],
+          "aki": {
+            "pickEn": "Belgium",
+            "pickNote": "比利时晋级",
+            "score": "2-1",
+            "conf": 60,
+            "tier": "lean",
+            "reason": "押比利时晋级、2-1，但只敢标偏向——这是今天唯一的 coin flip，两队 Elo 只差 43 分。我比机器（56%）略微更看好比利时（60%），因为动了机器看不见的一手：塞内加尔头号门将 Mendy 膝伤离队、基本无法出战，替补顶上，正撞上德布劳内+多库这套专门惩罚失误的进攻。风险是比利时自己也在哑火（假 9 踢法没牙、卢卡库还摁在替补席），塞内加尔的速度反击（马内、萨尔）随时能咬回来。所以：看好，但不敢拍胸脯。"
+          },
+          "machine": {
+            "pickEn": "Belgium",
+            "score": "1-1"
+          },
+          "result": null
+        },
+        {
+          "id": 81,
+          "time": "08:00",
+          "homeEn": "United States",
+          "awayEn": "Bosnia and Herzegovina",
+          "venue": "旧金山湾区",
+          "eloH": 1812,
+          "eloA": 1616,
+          "wld": [
+            69,
+            14,
+            17
+          ],
+          "aki": {
+            "pickEn": "United States",
+            "pickNote": "美国晋级",
+            "score": "2-1",
+            "conf": 71,
+            "tier": "stable",
+            "reason": "押美国晋级、2-1，稳胆但打个折。主场 + Elo 高波黑 196 分 + 普利西奇伤愈复出，纸面占优。可我把信心从机器的 76 降到 71，因为两颗暗雷：美国对欧洲球队已经连败 10 场、上次世界杯赢欧洲队还是 24 年前；波黑又是定位球杀器（角球已经进 3 个，本届最多）。大概率赢，但波黑很可能靠一记定位球咬下一城，所以我给他们留了个进球。"
+          },
+          "machine": {
+            "pickEn": "United States",
+            "score": "1-0"
           },
           "result": null
         }
