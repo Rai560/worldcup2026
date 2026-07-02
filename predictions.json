@@ -1,24 +1,24 @@
 {
-  "updatedBJ": "2026-07-01 14:00",
+  "updatedBJ": "2026-07-02 14:00",
   "note": "Aki 的赛前预测 · 每日北京时间下午自动更新 · 基于实时 Elo + 状态 + 历史交手的大胆估算 · 非官方，纯属娱乐，仅供参考",
   "stats": {
     "aki": {
       "winner": {
-        "n": 3,
-        "hit": 3
+        "n": 6,
+        "hit": 6
       },
       "score": {
-        "n": 3,
+        "n": 6,
         "hit": 0
       },
       "tier": {
         "stable": {
-          "n": 1,
-          "hit": 1
+          "n": 3,
+          "hit": 3
         },
         "lean": {
-          "n": 2,
-          "hit": 2
+          "n": 3,
+          "hit": 3
         },
         "longshot": {
           "n": 0,
@@ -28,17 +28,17 @@
     },
     "machine": {
       "winner": {
-        "n": 3,
-        "hit": 3
+        "n": 6,
+        "hit": 6
       },
       "score": {
-        "n": 3,
+        "n": 6,
         "hit": 0
       }
     },
     "streak": {
       "type": "hit",
-      "count": 3
+      "count": 6
     },
     "highlights": []
   },
@@ -194,7 +194,15 @@
             "pickEn": "England",
             "score": "2-0"
           },
-          "result": null
+          "result": {
+            "hs": 2,
+            "as": 1,
+            "advance": "England",
+            "akiWinner": true,
+            "akiScore": false,
+            "machineWinner": true,
+            "machineScore": false
+          }
         },
         {
           "id": 82,
@@ -221,7 +229,15 @@
             "pickEn": "Belgium",
             "score": "1-1"
           },
-          "result": null
+          "result": {
+            "hs": 3,
+            "as": 2,
+            "advance": "Belgium",
+            "akiWinner": true,
+            "akiScore": false,
+            "machineWinner": true,
+            "machineScore": false
+          }
         },
         {
           "id": 81,
@@ -246,6 +262,106 @@
           },
           "machine": {
             "pickEn": "United States",
+            "score": "1-0"
+          },
+          "result": {
+            "hs": 2,
+            "as": 0,
+            "advance": "United States",
+            "akiWinner": true,
+            "akiScore": false,
+            "machineWinner": true,
+            "machineScore": false
+          }
+        }
+      ]
+    },
+    {
+      "date": "2026-07-03",
+      "dayLabel": "7月3日 周五",
+      "stage": "32强淘汰赛 (1/16 决赛)",
+      "intro": "32强淘汰赛第三批，今天三场清一色欧洲豪门开打。西班牙对奥地利实力差最大，另外两场——葡萄牙碰克罗地亚、瑞士碰阿尔及利亚——纸面占优但对手都不好惹，我逐场拆给你看。淘汰赛没有平局，打平就加时点球，晋级归属我一并押上。",
+      "review": {
+        "summary": "📋 复盘 7/2：胜负又是三中三，六连红了，累计 6/6 胜负全对（比分依旧 0/6，我这盲盒是真只准方向不准刻度）。但今天终于有句能挺直腰板的：比利时那场我押 2-1、机器押 1-1，实际打成 3-2 进球大战——我预判了「塞内加尔会咬回来、这是场对攻」的方向，靠的正是机器看不见的一手（塞内加尔头号门将 Mendy 伤退，我判断两边后防都不稳、会对射），比冷冰冰的 1-1 更贴近真相。英格兰、美国那两场我和机器押得一样、也都中了。头一回，新闻情报让我在故事线上赢了算法一个身位。"
+      },
+      "matches": [
+        {
+          "id": 84,
+          "time": "03:00",
+          "homeEn": "Spain",
+          "awayEn": "Austria",
+          "venue": "洛杉矶",
+          "eloH": 2144,
+          "eloA": 1836,
+          "wld": [
+            81,
+            8,
+            11
+          ],
+          "aki": {
+            "pickEn": "Spain",
+            "pickNote": "西班牙晋级",
+            "score": "2-0",
+            "conf": 80,
+            "tier": "stable",
+            "reason": "押西班牙晋级、2-0，稳胆。卫冕欧洲杯冠军，小组赛三场一球没丢，Elo 高出奥地利 308 分——这档差距淘汰赛很难翻。我把信心从机器的 85 压到 80，是因为西班牙边路两把快刀都伤了（Nico Williams 内收肌、Yeremy Pino 肩锁关节，本场都不首发），进攻流畅度会打折；奥地利又是 Rangnick 的高压逼抢，能制造点麻烦。但亚马尔还在，防线滴水不漏，赢下来问题不大。"
+          },
+          "machine": {
+            "pickEn": "Spain",
+            "score": "2-0"
+          },
+          "result": null
+        },
+        {
+          "id": 83,
+          "time": "07:00",
+          "homeEn": "Portugal",
+          "awayEn": "Croatia",
+          "venue": "多伦多",
+          "eloH": 1989,
+          "eloA": 1904,
+          "wld": [
+            51,
+            21,
+            28
+          ],
+          "aki": {
+            "pickEn": "Portugal",
+            "pickNote": "葡萄牙晋级",
+            "score": "2-1",
+            "conf": 64,
+            "tier": "lean",
+            "reason": "押葡萄牙晋级、2-1，偏向——这是今天最胶着的一场，两队 Elo 只差 85 分。我比机器（62%）略微更看好葡萄牙（64%），因为动了机器看不见的账：克罗地亚近三场碰 FIFA 前十（英格兰、比利时、巴西）全输，首战还被英格兰灌了 4 球，后防转身慢是硬伤，正好撞上葡萄牙 Neto、菲利克斯两翼的速度；葡萄牙这边无伤停、板凳深（拉莫斯、莱昂待命），近 16 场只输 1 场。但 40 岁的莫德里奇+科瓦契奇这套中场经验太老辣、克罗地亚大赛从不怯场，所以我压着不敢标稳胆。"
+          },
+          "machine": {
+            "pickEn": "Portugal",
+            "score": "1-0"
+          },
+          "result": null
+        },
+        {
+          "id": 85,
+          "time": "11:00",
+          "homeEn": "Switzerland",
+          "awayEn": "Algeria",
+          "venue": "温哥华",
+          "eloH": 1906,
+          "eloA": 1786,
+          "wld": [
+            57,
+            19,
+            24
+          ],
+          "aki": {
+            "pickEn": "Switzerland",
+            "pickNote": "瑞士晋级",
+            "score": "2-1",
+            "conf": 69,
+            "tier": "lean",
+            "reason": "押瑞士晋级、2-1，偏向。瑞士 Elo 高出 120 分，小组赛全身而退、一场没输（4-1 掀翻波黑、逼平东道主加拿大），防守纪律是本届最好的之一。我把信心从机器的 67 微升到 69，因为阿尔及利亚后防太脆（三场丢 7 球，对奥地利就丢 3），还有 Mahrez 35 岁体能吃紧、Amoura 带伤存疑。不敢标稳胆的原因是阿尔及利亚进攻真能咬人，大概率会进一个，所以我给他们留了球——瑞士赢，但不是干净的零封。"
+          },
+          "machine": {
+            "pickEn": "Switzerland",
             "score": "1-0"
           },
           "result": null
