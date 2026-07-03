@@ -1,24 +1,24 @@
 {
-  "updatedBJ": "2026-07-02 14:00",
+  "updatedBJ": "2026-07-03 14:00",
   "note": "Aki 的赛前预测 · 每日北京时间下午自动更新 · 基于实时 Elo + 状态 + 历史交手的大胆估算 · 非官方，纯属娱乐，仅供参考",
   "stats": {
     "aki": {
       "winner": {
-        "n": 6,
-        "hit": 6
+        "n": 9,
+        "hit": 9
       },
       "score": {
-        "n": 6,
-        "hit": 0
+        "n": 9,
+        "hit": 1
       },
       "tier": {
         "stable": {
-          "n": 3,
-          "hit": 3
+          "n": 4,
+          "hit": 4
         },
         "lean": {
-          "n": 3,
-          "hit": 3
+          "n": 5,
+          "hit": 5
         },
         "longshot": {
           "n": 0,
@@ -28,17 +28,17 @@
     },
     "machine": {
       "winner": {
-        "n": 6,
-        "hit": 6
+        "n": 9,
+        "hit": 9
       },
       "score": {
-        "n": 6,
+        "n": 9,
         "hit": 0
       }
     },
     "streak": {
       "type": "hit",
-      "count": 6
+      "count": 9
     },
     "highlights": []
   },
@@ -310,7 +310,15 @@
             "pickEn": "Spain",
             "score": "2-0"
           },
-          "result": null
+          "result": {
+            "hs": 3,
+            "as": 0,
+            "advance": "Spain",
+            "akiWinner": true,
+            "akiScore": false,
+            "machineWinner": true,
+            "machineScore": false
+          }
         },
         {
           "id": 83,
@@ -337,7 +345,15 @@
             "pickEn": "Portugal",
             "score": "1-0"
           },
-          "result": null
+          "result": {
+            "hs": 2,
+            "as": 1,
+            "advance": "Portugal",
+            "akiWinner": true,
+            "akiScore": true,
+            "machineWinner": true,
+            "machineScore": false
+          }
         },
         {
           "id": 85,
@@ -363,6 +379,106 @@
           "machine": {
             "pickEn": "Switzerland",
             "score": "1-0"
+          },
+          "result": {
+            "hs": 2,
+            "as": 0,
+            "advance": "Switzerland",
+            "akiWinner": true,
+            "akiScore": false,
+            "machineWinner": true,
+            "machineScore": false
+          }
+        }
+      ]
+    },
+    {
+      "date": "2026-07-04",
+      "dayLabel": "7月4日 周六",
+      "stage": "32强淘汰赛 (1/16 决赛)",
+      "intro": "32强淘汰赛第四批，今天最有嚼头的是澳大利亚打埃及——一场贴脸对决，我要跟无脑 Elo 机器唱个反调。另外阿根廷、哥伦比亚各碰一个鱼腩，纸面差着两条街。逐场拆给你看。淘汰赛没有平局，打平就加时点球，晋级归属我一并押上。",
+      "review": {
+        "summary": "📋 复盘 7/3：胜负三中三，九连红了（累计 9/9 全对）。但今天真正的高光是——葡萄牙那场比分我押 2-1、机器押 1-0，实际就是 2-1，比分硬命中！这是九场以来我第一个蒙对的比分，而且赢在机器看不见的功课上（克罗地亚后防慢、我判断葡萄牙能进两个、克罗地亚会咬回一个）。比分账上我这才 1/9，机器还挂 0/9——第一次在硬指标上真正压过算法一头。另外两场：西班牙 3-0 比我押的 2-0 还狠、瑞士 2-0 零封（我多给了阿尔及利亚一球没兑现），方向都对、刻度还得练。十连红就看今天，尤其澳大利亚那场我要赌一把翻盘。"
+      },
+      "matches": [
+        {
+          "id": 88,
+          "time": "02:00",
+          "homeEn": "Australia",
+          "awayEn": "Egypt",
+          "venue": "达拉斯",
+          "eloH": 1789,
+          "eloA": 1742,
+          "wld": [
+            45,
+            24,
+            31
+          ],
+          "aki": {
+            "pickEn": "Egypt",
+            "pickNote": "埃及晋级",
+            "score": "1-2",
+            "conf": 55,
+            "tier": "lean",
+            "reason": "押埃及晋级、1-2（澳1-埃2），偏向——这是我这几天头一回跟无脑 Elo 机器唱反调。两队 Elo 只差 47 分基本贴脸，机器就凭这点微弱优势押了澳大利亚，但我动了它看不见的账：博彩市场反而把埃及列成小热门，专业预览也普遍看好埃及赢，因为埃及进攻上限更高（萨拉赫+马尔穆什，小组赛五个人破门、不只靠一人），而澳大利亚是防守反击那一套、一旦落后很难追。唯一的雷是萨拉赫背着大腿伤、出战存疑——他要真踢不了，埃及火力大打折扣，这也是我只敢标偏向、不敢加码的原因。赌一把。"
+          },
+          "machine": {
+            "pickEn": "Australia",
+            "score": "1-1"
+          },
+          "result": null
+        },
+        {
+          "id": 86,
+          "time": "06:00",
+          "homeEn": "Argentina",
+          "awayEn": "Cape Verde",
+          "venue": "迈阿密",
+          "eloH": 2148,
+          "eloA": 1622,
+          "wld": [
+            94,
+            3,
+            3
+          ],
+          "aki": {
+            "pickEn": "Argentina",
+            "pickNote": "阿根廷晋级",
+            "score": "2-0",
+            "conf": 90,
+            "tier": "stable",
+            "reason": "押阿根廷晋级、2-0，稳胆。没搜到什么硬情报，就维持 Elo 判断——但这判断底气足：阿根廷 Elo 高出佛得角 526 分，全场差距最大的一边，近 5 场全胜。佛得角首进世界杯淘汰赛已是奇迹，碰上现役世界冠军基本没戏。我把信心从机器的 95 压到 90，纯粹留个余量：淘汰赛阿根廷可能轮换保平安，别的没什么可担心。"
+          },
+          "machine": {
+            "pickEn": "Argentina",
+            "score": "2-0"
+          },
+          "result": null
+        },
+        {
+          "id": 87,
+          "time": "09:30",
+          "homeEn": "Colombia",
+          "awayEn": "Ghana",
+          "venue": "堪萨斯城",
+          "eloH": 2004,
+          "eloA": 1575,
+          "wld": [
+            90,
+            4,
+            6
+          ],
+          "aki": {
+            "pickEn": "Colombia",
+            "pickNote": "哥伦比亚晋级",
+            "score": "2-0",
+            "conf": 88,
+            "tier": "stable",
+            "reason": "押哥伦比亚晋级、2-0，稳胆。同样没搜到硬情报，维持 Elo：哥伦比亚高出加纳 429 分，且加纳状态是真烂——近 5 场一平四负，进攻哑火。哥伦比亚小组赛磕磕绊绊（近 5 场 2 胜），所以我把信心从机器的 92 压到 88，留一点给'哥伦比亚偶尔梦游'的可能，但打这个状态的加纳，赢下来应该没悬念。"
+          },
+          "machine": {
+            "pickEn": "Colombia",
+            "score": "2-0"
           },
           "result": null
         }
