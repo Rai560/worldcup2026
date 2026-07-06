@@ -1,24 +1,24 @@
 {
-  "updatedBJ": "2026-07-03 14:00",
+  "updatedBJ": "2026-07-06 14:01",
   "note": "Aki 的赛前预测 · 每日北京时间下午自动更新 · 基于实时 Elo + 状态 + 历史交手的大胆估算 · 非官方，纯属娱乐，仅供参考",
   "stats": {
     "aki": {
       "winner": {
-        "n": 9,
-        "hit": 9
+        "n": 12,
+        "hit": 12
       },
       "score": {
-        "n": 9,
+        "n": 12,
         "hit": 1
       },
       "tier": {
         "stable": {
-          "n": 4,
-          "hit": 4
+          "n": 6,
+          "hit": 6
         },
         "lean": {
-          "n": 5,
-          "hit": 5
+          "n": 6,
+          "hit": 6
         },
         "longshot": {
           "n": 0,
@@ -28,17 +28,17 @@
     },
     "machine": {
       "winner": {
-        "n": 9,
-        "hit": 9
+        "n": 12,
+        "hit": 11
       },
       "score": {
-        "n": 9,
-        "hit": 0
+        "n": 12,
+        "hit": 1
       }
     },
     "streak": {
       "type": "hit",
-      "count": 9
+      "count": 12
     },
     "highlights": []
   },
@@ -426,7 +426,19 @@
             "pickEn": "Australia",
             "score": "1-1"
           },
-          "result": null
+          "result": {
+            "hs": 1,
+            "as": 1,
+            "advance": "Egypt",
+            "akiWinner": true,
+            "akiScore": false,
+            "machineWinner": false,
+            "machineScore": true,
+            "pen": [
+              2,
+              4
+            ]
+          }
         },
         {
           "id": 86,
@@ -453,7 +465,15 @@
             "pickEn": "Argentina",
             "score": "2-0"
           },
-          "result": null
+          "result": {
+            "hs": 3,
+            "as": 2,
+            "advance": "Argentina",
+            "akiWinner": true,
+            "akiScore": false,
+            "machineWinner": true,
+            "machineScore": false
+          }
         },
         {
           "id": 87,
@@ -479,6 +499,79 @@
           "machine": {
             "pickEn": "Colombia",
             "score": "2-0"
+          },
+          "result": {
+            "hs": 1,
+            "as": 0,
+            "advance": "Colombia",
+            "akiWinner": true,
+            "akiScore": false,
+            "machineWinner": true,
+            "machineScore": false
+          }
+        }
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "dayLabel": "7月7日 周二",
+      "stage": "16强淘汰赛 (1/8 决赛)",
+      "intro": "16 强淘汰赛打到今天，只剩两场，但都是硬菜、赢了才摸得着八强门票：先是伊比利亚德比——葡萄牙对西班牙，C罗和亚马尔隔空对飙；再来东道主美国迎战比利时。两场都不是纸面碾压，我逐场拆给你看。淘汰赛没有平局，打平就加时点球，晋级归属我一并押上。",
+      "review": {
+        "summary": "📋 复盘 7/4，这天我等了很久——澳大利亚对埃及，我顶着无脑 Elo 机器唱反调、翻盘押了埃及晋级，结果 1-1 拖进点球、埃及 4-2 淘汰澳大利亚，我押对了！机器死抱 Elo 押澳大利亚，翻车。这是新闻情报头一回让我在'谁晋级'上真正赢过算法一场：胜负账我现在 12/12 全对、机器 11/12——第一次拉开身位，靠的正是机器看不到的那点功课（博彩市场和专业预览都看好埃及、澳大利亚进攻乏力）。另外两场阿根廷 3-2 佛得角（佛得角居然咬进两球，惊了一身汗）、哥伦比亚 1-0 加纳，晋级方向都押对、比分照旧没蒙准。十二连红继续，今天两场硬仗接着扛。"
+      },
+      "matches": [
+        {
+          "id": 93,
+          "time": "03:00",
+          "homeEn": "Portugal",
+          "awayEn": "Spain",
+          "venue": "达拉斯",
+          "eloH": 2012,
+          "eloA": 2159,
+          "wld": [
+            22,
+            17,
+            61
+          ],
+          "aki": {
+            "pickEn": "Spain",
+            "pickNote": "西班牙晋级",
+            "score": "1-2",
+            "conf": 72,
+            "tier": "stable",
+            "reason": "押西班牙晋级、1-2（葡1-西2），稳胆。Elo 高出葡萄牙 147 分，但我给稳胆更多是靠机器看不见的功课：西班牙这届五场全零封、一球没丢，35 场不败，是全场状态最稳的球队，博彩市场也把它列成热门；反观葡萄牙险些被克罗地亚拖进加时（94 分钟+VAR 才过关），C罗、B费、维蒂尼亚还早早被换下、留了体能疑问。两家专业预览也都押西班牙 1-2。我把信心从机器的 70 微升到 72、跨进稳胆，但压着没敢更高——葡萄牙欧国联刚赢过这支西班牙、C罗和B费的个人能力随时能改写剧本，这是强强对话不是虐菜。"
+          },
+          "machine": {
+            "pickEn": "Spain",
+            "score": "0-1"
+          },
+          "result": null
+        },
+        {
+          "id": 94,
+          "time": "08:00",
+          "homeEn": "United States",
+          "awayEn": "Belgium",
+          "venue": "西雅图",
+          "eloH": 1834,
+          "eloA": 1910,
+          "wld": [
+            28,
+            22,
+            50
+          ],
+          "aki": {
+            "pickEn": "Belgium",
+            "pickNote": "比利时晋级",
+            "score": "1-1",
+            "conf": 52,
+            "tier": "lean",
+            "reason": "押比利时晋级、1-1（打平点球见分晓），偏向——但这是今天我最纠结、最可能翻车的一场。按纪律我不翻：两队 Elo 差 76 分（超过我给自己定的'约50分才翻'的贴脸线），加上比利时个人能力更强（德布劳内+多库+替补奇兵卢卡库），H2H 六胜一负，今年 3 月热身赛还 5-2 血洗过美国。但我把信心从机器的 61 直接压到 52、贴着下限，因为机器看不见的账几乎全站美国这边：东道主主场满座、博彩市场反而把美国列成小热门、专业预览甚至预测美国 2-1 晋级，比利时又老又慢、最怕美国这种高压逼抢+快速反击。所以：名义上押比利时，实际这就是个 coin flip，美国主场随时能把我掀翻，别怪我没提醒。"
+          },
+          "machine": {
+            "pickEn": "Belgium",
+            "score": "1-1"
           },
           "result": null
         }
