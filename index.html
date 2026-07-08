@@ -507,7 +507,8 @@ function renderAkiPredict(){
       const items=(cur.review.items||[]).map(function(it){
         return '<div class="ak-rv-item"><b>'+it.match+'</b>\uff1a\u62bc '+it.pick+' \u2192 \u5b9e\u9645 '+it.actual+' '+it.tag+(it.note?'\u3000'+it.note:'')+'</div>';
       }).join("");
-      rv='<div class="ak-review"><div class="ak-rv-hd">\ud83d\udcca \u6628\u65e5\u590d\u76d8 <span class="ak-hits">\u547d\u4e2d '+cur.review.hits+'/'+cur.review.total+'</span></div><div class="ak-rv-sum">'+cur.review.summary+'</div>'+items+'</div>';
+      var akbadge=(cur.review.hits!=null&&cur.review.total!=null)?'<span class="ak-hits">\u547d\u4e2d '+cur.review.hits+'/'+cur.review.total+'</span>':'';
+      rv='<div class="ak-review"><div class="ak-rv-hd">\ud83d\udcca \u6628\u65e5\u590d\u76d8 '+akbadge+'</div><div class="ak-rv-sum">'+cur.review.summary+'</div>'+items+'</div>';
     }
   }
   const cards=cur.matches.map(function(m){return akiMatchCard(m);}).join("");
@@ -520,7 +521,7 @@ function renderAkiPredict(){
         if(m.result)mark=m.result.akiWinner?' <span class="ak-ok">\u2713</span>':' <span class="ak-no">\u2717</span>';
         return zh(m.homeEn)+' '+m.aki.score+' '+zh(m.awayEn)+mark;
       }).join('\uff1b');
-      const hit=(e.review&&!e.review.first)?'\u3000\u547d\u4e2d '+e.review.hits+'/'+e.review.total:'';
+      const hit=(e.review&&e.review.hits!=null&&e.review.total!=null)?'\u3000\u547d\u4e2d '+e.review.hits+'/'+e.review.total:'';
       return '<div class="ak-hist-item"><div class="ak-hd">'+e.dayLabel+' \u00b7 '+e.stage+hit+'</div>'+ms+'</div>';
     }).join("");
     histHtml='<div class="ak-hist-hd" onclick="akiToggleHist()">\ud83d\udcdc \u5386\u53f2\u9884\u6d4b ('+past.length+') '+(AKI.hist?"\u25b4":"\u25be")+'</div>'+(AKI.hist?items:"");
